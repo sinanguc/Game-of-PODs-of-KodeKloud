@@ -1,3 +1,3 @@
 # Voeting App
 
-![Alt text](https://github.com/sinanguc/Game-of-PODs-of-KodeKloud/Voting-App/blob/main/architecture.PNG?raw=true "Architecture")
+![Alt text](https://github.com/sinanguc/Game-of-PODs-of-KodeKloud/blob/main/Voting%20App/architecture.png?raw=true "Architecture")
