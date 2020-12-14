@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: result-deployment
+  name: result-deployment
+  namespace: vote
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: result-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: result-deployment
+    spec:
+      containers:
+      - image: kodekloud/examplevotingapp_result:before
+        name: result-deployment
+        ports:
+        - containerPort: 5001
+        env:
+        - name: POSTGRES_PASSWORD
+          value: "123456"
